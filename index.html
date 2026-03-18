@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <!-- Boxicons CDN for icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Logo / Brand -->
+    <a href="#home" class="logo">Portfolio</a>
+    <!-- Hamburger icon for mobile -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <!-- Navigation links -->
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <span class="eyebrow">Hello!</span>
+      <h1>I'm a software engineer</h1>
+      <div class="text-animate">
+        <!-- The typing effect inserts text into this element via JS -->
+        <h3 id="typing-text"></h3>
+      </div>
+      <p class="hero-summary">
+        I design and develop innovative web applications, build scalable microservices and cloud architectures, 
+        and craft data pipelines that turn raw information into actionable insights.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h4>5+</h4>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-card">
+          <h4>10+</h4>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-card">
+          <h4>3+</h4>
+          <p>Industries Served</p>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="#contact" class="btn">Hire Me</a>
+        <!-- Link to downloadable resume PDF -->
+        <a href="Resume_Saichandanraju_Padmaraju.pdf" class="btn btn-outline" target="_blank">Resume</a>
+      </div>
+      <!-- Social icons -->
+      <div class="home-sci">
+        <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+    <!-- Hero side card listing focus areas -->
+    <div class="hero-card glass-card">
+      <div class="hero-card-title">About Me</div>
+      <ul>
+        <li>Full‑stack web development</li>
+        <li>Cloud &amp; microservices architectures</li>
+        <li>Data engineering &amp; analytics</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="images/about.jpg" alt="About portrait">
+      </div>
+      <div class="about-content">
+        <h3>Your trusted technology partner</h3>
+        <p>
+          I'm a passionate engineer who loves to build things that make a difference. 
+          My journey spans full‑stack development, cloud native services, and data engineering. 
+          I'm committed to delivering robust and user‑centric solutions that stand the test of time.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <i class="bx bx-code-alt"></i>
+            <div>
+              <h4>Innovative Solutions</h4>
+              <p>Creative problem solving to deliver value‑driven products.</p>
+            </div>
+          </div>
+          <div class="highlight">
+            <i class="bx bx-cloud"></i>
+            <div>
+              <h4>Cloud Native</h4>
+              <p>Architecting scalable and resilient microservice systems.</p>
+            </div>
+          </div>
+          <div class="highlight">
+            <i class="bx bx-analyse"></i>
+            <div>
+              <h4>Data Driven</h4>
+              <p>Turning data into insights through pipelines and analytics.</p>
+            </div>
+          </div>
+        </div>
+        <a href="Resume_Saichandanraju_Padmaraju.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="education" id="skills">
+    <h2 class="heading">Technical <span>Skills</span></h2>
+    <div class="education-grid">
+      <div class="education-card glass-card">
+        <i class="bx bxl-javascript"></i>
+        <h3>Front‑end Development</h3>
+        <p>Expertise in React, Vue, and modern JavaScript frameworks to craft intuitive user interfaces.</p>
+      </div>
+      <div class="education-card glass-card">
+        <i class="bx bxl-java"></i>
+        <h3>Back‑end &amp; APIs</h3>
+        <p>Experience building robust services with Spring Boot, Node.js, and RESTful or GraphQL APIs.</p>
+      </div>
+      <div class="education-card glass-card">
+        <i class="bx bxl-python"></i>
+        <h3>Data Engineering</h3>
+        <p>Developing ETL pipelines and analytics workflows using Python, Pandas, and SQL.</p>
+      </div>
+      <div class="education-card glass-card">
+        <i class="bx bxs-cloud"></i>
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Deploying applications on AWS and Kubernetes, and automating CI/CD for reliable delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section (Timeline) -->
+  <section class="timeline" id="experience">
+    <h2 class="heading">Professional <span>Experience</span></h2>
+    <!-- First role -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-date">2024&nbsp;–&nbsp;Present</span>
+        <h3>Software Engineer</h3>
+        <h4>Technology Company</h4>
+        <ul>
+          <li>Developed a hyper‑local eCommerce platform to streamline shopping experiences.</li>
+          <li>Architected scalable front‑end and back‑end modules using React and Spring Boot.</li>
+          <li>Automated cloud deployments, enabling rapid and reliable releases.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Second role -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-date">2023&nbsp;–&nbsp;2024</span>
+        <h3>Software Engineer</h3>
+        <h4>AI &amp; Data Company</h4>
+        <ul>
+          <li>Built data pipelines for learning feedback analysis, improving throughput and quality.</li>
+          <li>Designed simulation environments for large language model evaluation.</li>
+          <li>Shipped real‑time monitoring dashboards to provide actionable insights.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Third role -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass-card">
+        <span class="timeline-date">2020&nbsp;–&nbsp;2021</span>
+        <h3>Associate Software Engineer</h3>
+        <h4>Enterprise Solutions</h4>
+        <ul>
+          <li>Enhanced procurement software with new features and performance improvements.</li>
+          <li>Tuned data access layers, reducing API latency and boosting stability.</li>
+          <li>Administered middleware services ensuring high availability and uptime.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="education" id="projects">
+    <h2 class="heading">Featured <span>Projects</span></h2>
+    <div class="projects-container">
+      <div class="project-card glass-card">
+        <div class="project-top">
+          <span class="tag">Web</span>
+          <span class="tag">React</span>
+          <span class="tag">Spring Boot</span>
+        </div>
+        <h3>E‑Commerce Platform</h3>
+        <p>Built an end‑to‑end marketplace application enabling hyper‑local shopping with optimized user flows and seamless payments.</p>
+      </div>
+      <div class="project-card glass-card">
+        <div class="project-top">
+          <span class="tag">Data</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+        </div>
+        <h3>Feedback Analytics</h3>
+        <p>Implemented data pipelines to clean, aggregate, and analyze user feedback for model fine‑tuning and evaluation.</p>
+      </div>
+      <div class="project-card glass-card">
+        <div class="project-top">
+          <span class="tag">AI</span>
+          <span class="tag">Java</span>
+          <span class="tag">Simulation</span>
+        </div>
+        <h3>Model Simulation Suite</h3>
+        <p>Developed simulation harnesses to test and improve algorithms through automated regression and behavioral analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Get in <span>Touch</span></h2>
+    <div class="contact-container">
+      <!-- Contact information -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>If you'd like to collaborate or discuss a project, feel free to reach out via the form or email. I'm excited to connect and explore new opportunities.</p>
+        <div class="contact-card glass-card">
+          <p><i class="bx bx-envelope"></i> pscr.lm0428@gmail.com</p>
+          <p><i class="bx bx-map"></i> Based in the United States</p>
+        </div>
+      </div>
+      <!-- Contact form -->
+      <form id="contact-form">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Name" required>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="input-field full-width">
+          <input type="text" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="textarea-field">
+          <textarea id="message" rows="6" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="margin-top:2rem;">Send Message</button>
+        <p id="form-status" style="margin-top:1rem;color:var(--accent-color);font-size:1.4rem;"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+    <p style="text-align:center;font-size:1.4rem;color:var(--muted-text);padding:1.4rem 0;">
+      &copy; 2026 Professional Portfolio. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
